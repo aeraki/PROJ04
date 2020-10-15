@@ -1,0 +1,240 @@
+body {
+	background-color: #26292d;
+	background-repeat: no-repeat;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	margin: 0;
+	cursor: default;
+	scrollbar-color: black;
+	user-select: none;
+}
+
+header {
+	margin: 40px 30px;
+}
+
+a {
+	text-decoration: none;
+}
+
+header #home {
+	display: inline-block;
+	padding: 5px 10px;
+	transition: 0.2s;
+	cursor: pointer;
+	background-color: #26292d;
+	border-radius: 15px;
+	border: solid 1px transparent;
+	margin-left: 5px;
+}
+header #home:hover {
+	box-shadow:  7px 7px 16px #1e2024, -7px -7px 16px #2e3236;
+	border: solid 1px #353535;
+}
+header #home:active {
+	box-shadow: inset 7px 7px 16px #1e2024, inset -7px -7px 16px #2e3236;
+}
+
+header h1 {
+	font-size: 40px;
+	color: #0387c4;
+	font-weight: 800;
+	margin: 0;
+	display: inline-block;
+}
+
+header h2 {
+	font-size: 25px;
+	color: lightgray;
+	margin: 0;
+	display: inline-block;
+}
+
+header .list {
+	float: right;
+	margin-right: 15px;
+	font-size: 0;
+	display: block;
+}
+
+header .list a {
+	font-size: 22px;
+	color: white;
+	display: inline-block;
+	margin-left: 30px;
+	padding: 15px 25px;
+	cursor: pointer;
+	border-radius: 20px;
+	background: #26292d;
+	box-shadow:  7px 7px 16px #1e2024, -7px -7px 16px #2e3236;
+	transition: 0.2s;
+	border: solid 1px #1d1d1d;
+}
+header .list a:hover { color: #0387c4; }
+header .list a:active {
+	box-shadow: inset 2px 2px 16px #1e2024, inset -2px -2px 16px #2e3236;
+	color: #0387c4;
+}
+
+header .list a.on, header .list a.on:hover {
+	background-color: #0387c4;
+	color: white;
+	border-color: #0387c4;
+}
+header .list a.on:active { 
+	box-shadow: inset 5px 5px 23px #035a83, inset -5px -5px 23px #06aaf7;
+}
+
+footer {
+	background-color: #1b1e22;
+	height: 80px;
+	width: 100%;
+	box-shadow: 0 0 10px #00000048;
+	padding: 10px 0;
+}
+footer h2 {
+	margin: 0;
+	font-size: 20px;
+	color: lightgray;
+	text-align: center;
+	line-height: 30px;
+	margin: 5px 0;
+}
+
+.page {
+	display: block;
+	margin: 25px;
+	margin-top: 40px;
+	margin-bottom: 0;
+	border-radius: 50px 50px 0 0;
+	background-color: #26292d;
+	box-shadow: inset 11px 11px 25px #1d2024, inset -11px -11px 25px #2f3236;
+	padding: 25px;
+	border: solid 1px #1d1d1d;
+	border-bottom-width: 0;
+}
+.page h1 {
+	color: #0387c4;
+	font-size: 50px;
+	margin: 0;
+}
+.page p {
+	font-size: 20px;
+	color: lightgray;
+	margin: 40px 50px 20px 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: 400px 400px;
+	grid-template-columns: 35% 30% 35%;
+}
+
+.grid > div {
+	display: block;
+	background-color: #26292d;
+	border-radius: 25px;
+	border: solid 1px #1d1d1d;
+	box-shadow: 7px 7px 25px #1d2024, -7px -7px 25px #2f3236;
+	padding: 30px;
+	margin: 20px;
+	transition: 0.2s;
+	overflow: hidden;
+}
+
+#feature {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	cursor: pointer;
+}
+#feature .img {
+	width: 100%;
+	height: 215px;
+	margin-bottom: 15px;
+	border-radius: 25px;
+	overflow: hidden;
+	background-image: url('./background.png');
+	background-size: 230%;
+}
+#feature h1, #feature h2 {display: inline-block; margin: 0;}
+#feature h2 {
+	color: lightgray;
+	margin-left: 20px;
+	font-size: 30px;
+}
+#feature:hover {
+	border-color: #555555;
+}
+
+#new h1 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+#new .list {
+	height: 230px;
+	overflow-y: hidden;
+	scrollbar-width: thin;
+}
+#new .list > div {
+	color: lightgray;
+	margin-bottom: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 2px solid #1d1d1d;
+	transition: 0.2s;
+}
+#new .list > div:hover {
+	border-bottom-color: #555555;
+}
+#new .list > div b {
+	color: #555555;
+}
+#new .list > div i {
+	color: #464646;
+	font-size: 12px;
+	float: right;
+	margin-top: 10px;
+}
+
+#games {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+#games h1 {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+#games .gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#games .gallery > div {
+	width: 300px;
+	height: 200px;
+	background-color: #222;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 10px;
+	line-height: 200px;
+	text-align: center;
+	color: lightgray;
+	font-size: 0;
+	background-size: 100%;
+	background-position-x: center;
+	background-position-y: center;
+	border: solid 2px transparent;
+	transition: 0.2s;
+	cursor: pointer;
+}
+#games .gallery div:hover {
+	border-color: #555555;
+	background-size: 110%;
+}
+
+#randgif img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
