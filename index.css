@@ -91,13 +91,19 @@ footer {
 	box-shadow: 0 0 10px #00000048;
 	padding: 10px 0;
 }
-footer h2 {
+footer h2, footer a {
+	display: block;
 	margin: 0;
 	font-size: 20px;
 	color: lightgray;
 	text-align: center;
 	line-height: 30px;
 	margin: 5px 0;
+	transition: 0.2s;
+	cursor: pointer;
+}
+footer #ver:hover {
+	color: #0387c4;
 }
 
 .page {
@@ -111,6 +117,7 @@ footer h2 {
 	padding: 25px;
 	border: solid 1px #1d1d1d;
 	border-bottom-width: 0;
+	min-height: 58vh;
 }
 .page h1 {
 	color: #0387c4;
@@ -141,12 +148,12 @@ footer h2 {
 	overflow: hidden;
 }
 
-#feature {
+#Home #feature {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	cursor: pointer;
 }
-#feature .img {
+#Home #feature .img {
 	width: 100%;
 	height: 215px;
 	margin-bottom: 15px;
@@ -155,26 +162,26 @@ footer h2 {
 	background-image: url('./background.png');
 	background-size: 230%;
 }
-#feature h1, #feature h2 {display: inline-block; margin: 0;}
-#feature h2 {
+#Home #feature h1, #feature h2 {display: inline-block; margin: 0;}
+#Home #feature h2 {
 	color: lightgray;
 	margin-left: 20px;
 	font-size: 30px;
 }
-#feature:hover {
+#Home #feature:hover {
 	border-color: #555555;
 }
 
-#new h1 {
+#Home #new h1 {
 	font-size: 30px;
 	margin-bottom: 15px;
 }
-#new .list {
+#Home #new .list {
 	height: 230px;
 	overflow-y: hidden;
 	scrollbar-width: thin;
 }
-#new .list > div {
+#Home #new .list > div {
 	color: lightgray;
 	margin-bottom: 5px;
 	font-size: 20px;
@@ -184,33 +191,33 @@ footer h2 {
 	border-bottom: 2px solid #1d1d1d;
 	transition: 0.2s;
 }
-#new .list > div:hover {
+#Home #new .list > div:hover {
 	border-bottom-color: #555555;
 }
-#new .list > div b {
+#Home #new .list > div b {
 	color: #555555;
 }
-#new .list > div i {
+#Home #new .list > div i {
 	color: #464646;
 	font-size: 12px;
 	float: right;
 	margin-top: 10px;
 }
 
-#games {
+#Home #games {
 	grid-column-start: 2;
 	grid-column-end: 4;
 }
-#games h1 {
+#Home #games h1 {
 	font-size: 35px;
 	margin-bottom: 20px;
 }
-#games .gallery {
+#Home #games .gallery {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-#games .gallery > div {
+#Home #games .gallery > div {
 	width: 300px;
 	height: 200px;
 	background-color: #222;
@@ -228,17 +235,24 @@ footer h2 {
 	transition: 0.2s;
 	cursor: pointer;
 }
-#games .gallery div:hover {
+#Home #games .gallery div:hover {
 	border-color: #555555;
 	background-size: 110%;
 }
 
-#randgif img {
+#Home #randgif img {
 	width: 100%;
 	height: 100%;
 	border-radius: 20px;
+	border: 2px solid transparent;
+	transition: 0.2s;
+	cursor: pointer;
+}
+#Home #randgif img:hover {
+	border-color: #0387c4;
 }
 
-#Article {
+.page.article {
 	padding: 40px;
+	user-select: text;
 }
