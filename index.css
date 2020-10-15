@@ -148,12 +148,12 @@ footer #ver:hover {
 	overflow: hidden;
 }
 
-#Home #feature {
+#Home_0 #feature {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	cursor: pointer;
 }
-#Home #feature .img {
+#Home_0 #feature .img {
 	width: 100%;
 	height: 215px;
 	margin-bottom: 15px;
@@ -162,26 +162,26 @@ footer #ver:hover {
 	background-image: url('./background.png');
 	background-size: 230%;
 }
-#Home #feature h1, #feature h2 {display: inline-block; margin: 0;}
-#Home #feature h2 {
+#Home_0 #feature h1, #feature h2 {display: inline-block; margin: 0;}
+#Home_0 #feature h2 {
 	color: lightgray;
 	margin-left: 20px;
 	font-size: 30px;
 }
-#Home #feature:hover {
+#Home_0 #feature:hover {
 	border-color: #555555;
 }
 
-#Home #new h1 {
+#Home_0 #new h1 {
 	font-size: 30px;
 	margin-bottom: 15px;
 }
-#Home #new .list {
+#Home_0 #new .list {
 	height: 230px;
 	overflow-y: hidden;
 	scrollbar-width: thin;
 }
-#Home #new .list > div {
+#Home_0 #new .list > div {
 	color: lightgray;
 	margin-bottom: 5px;
 	font-size: 20px;
@@ -191,33 +191,33 @@ footer #ver:hover {
 	border-bottom: 2px solid #1d1d1d;
 	transition: 0.2s;
 }
-#Home #new .list > div:hover {
+#Home_0 #new .list > div:hover {
 	border-bottom-color: #555555;
 }
-#Home #new .list > div b {
+#Home_0 #new .list > div b {
 	color: #555555;
 }
-#Home #new .list > div i {
+#Home_0 #new .list > div i {
 	color: #464646;
 	font-size: 12px;
 	float: right;
 	margin-top: 10px;
 }
 
-#Home #games {
+#Home_0 #games {
 	grid-column-start: 2;
 	grid-column-end: 4;
 }
-#Home #games h1 {
+#Home_0 #games h1 {
 	font-size: 35px;
 	margin-bottom: 20px;
 }
-#Home #games .gallery {
+#Home_0 #games .gallery {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-#Home #games .gallery > div {
+#Home_0 #games .gallery > div {
 	width: 300px;
 	height: 200px;
 	background-color: #222;
@@ -235,12 +235,12 @@ footer #ver:hover {
 	transition: 0.2s;
 	cursor: pointer;
 }
-#Home #games .gallery div:hover {
+#Home_0 #games .gallery div:hover {
 	border-color: #555555;
 	background-size: 110%;
 }
 
-#Home #randgif img {
+#Home_0 #randgif img {
 	width: 100%;
 	height: 100%;
 	border-radius: 20px;
@@ -248,7 +248,7 @@ footer #ver:hover {
 	transition: 0.2s;
 	cursor: pointer;
 }
-#Home #randgif img:hover {
+#Home_0 #randgif img:hover {
 	border-color: #0387c4;
 }
 
