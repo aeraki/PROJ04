@@ -16,6 +16,9 @@ function pageOnLoad() {
 function openPage(id) {
 	$('.page').css('display', 'none');
 	$('.page'+id+'_0').css('display', 'block');
+
+	$('header .list a').removeClass();
+	$('header .list '+id+'_t').addClass('on');
 };
 
 window.onhashchange = function () {

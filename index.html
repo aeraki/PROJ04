@@ -7,6 +7,7 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&amp;display=swap' rel='stylesheet'/>
 	<link rel ='stylesheet' href='./index.css'/>
+	<link rel ='stylesheet' href='./mobile.css'/>
 	<script src='./index.js'></script>
 </head>
 <body>
@@ -17,9 +18,10 @@
 		<h2>アエラキ</h2>
 	</a>
 	<div class='list'>
-		<a href='#About'>About</a>
-		<a href='#Games'>Games</a>
-		<a href='#Code'>Code</a>
+		<a href='#About' id='About_t'>About</a>
+		<a href='#Games' id='Games_t'>Games</a>
+		<a href='#Code' id='Code_t'>Code</a>
+		<h2>≡</h2>
 	</div>
 </header>
 
@@ -37,9 +39,6 @@
 				<div><b>[Site]</b> New Website v4.0 <!--<i>10/14/20</i>--></div>
 			</div>
 		</div>
-		<div id='randgif'>
-			<img/>
-		</div>
 		<div id='games'>
 			<h1>Games</h1>
 			<div class='gallery'>
@@ -47,14 +46,19 @@
 				<div style='background-image: url("./img/card_redspectre.png");'>Red Spectre</div>
 			</div>
 		</div>
+		<div id='randgif'>
+			<img/>
+		</div>
 	</div>
 </div>
 
 <div class='page article' id='About_0'>
 	<h1>My name is Ben Aeraki</h1>
 	<p>
-		I am an aspiring game developer, and web developer hobbyist. You may also see me under the name "Kishi Aeraki".
-		I've worked with a few game engines, but the ones I have enjoyed the most are fantasy consoles: primarily PICO8 and TIC80.
+		I am an aspiring game developer, and web developer hobbyist.
+		You may also see me under the name "Kishi Aeraki".
+		I've worked with a few game engines, but the ones I have enjoyed
+		the most are fantasy consoles: primarily PICO8 and TIC80.
 	</p>
 </div>
 
@@ -76,10 +80,11 @@
 </notes>
 
 <script>
-	let randomgif = Math.floor(Math.random() * 5);
+	let randomgif = Math.floor(Math.random() * 13);
 	$('#randgif img').attr('src', './img/gif_'+randomgif+'.gif');
 
 	pageOnLoad();
+	console.log('Why hello there ( ͡° ͜ʖ ͡°)')
 </script>
 
 </body>
