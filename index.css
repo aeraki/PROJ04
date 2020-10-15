@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 
-header #home {
+header #name {
 	display: inline-block;
 	padding: 5px 10px;
 	transition: 0.2s;
@@ -26,11 +26,11 @@ header #home {
 	border: solid 1px transparent;
 	margin-left: 5px;
 }
-header #home:hover {
+header #name:hover {
 	box-shadow:  7px 7px 16px #1e2024, -7px -7px 16px #2e3236;
 	border: solid 1px #353535;
 }
-header #home:active {
+header #name:active {
 	box-shadow: inset 7px 7px 16px #1e2024, inset -7px -7px 16px #2e3236;
 }
 
@@ -101,7 +101,7 @@ footer h2 {
 }
 
 .page {
-	display: block;
+	display: none;
 	margin: 25px;
 	margin-top: 40px;
 	margin-bottom: 0;
@@ -237,4 +237,8 @@ footer h2 {
 	width: 100%;
 	height: 100%;
 	border-radius: 20px;
+}
+
+#Article {
+	padding: 40px;
 }

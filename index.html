@@ -7,22 +7,23 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 	<link href='https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&amp;display=swap' rel='stylesheet'/>
 	<link rel ='stylesheet' href='./index.css'/>
+	<script src='./index.js'></script>
 </head>
 <body>
 
 <header>
-	<a id='home'>
+	<a id='name' href='#Home'>
 		<h1>Aeraki</h1>
 		<h2>アエラキ</h2>
 	</a>
 	<div class='list'>
-		<a>About</a>
-		<a href='./games/index.html'>Games</a>
-		<a>Code</a>
+		<a href='#Article/About'>About</a>
+		<a href='#Games'>Games</a>
+		<a href='#Code'>Code</a>
 	</div>
 </header>
 
-<div class='page'>
+<div class='page' id='Home'>
 	<div class='grid'>
 		<div id='feature'>
 			<div class='img'></div>
@@ -49,24 +50,24 @@
 	</div>
 </div>
 
+<div class='page' id='Article'></div>
+
 <footer>
 	<h2>© 2020 Aeraki</h2>
 	<h2>Website v4.0.0</h2>
 </footer>
 
 <notes style='display:none;'>
-
-- Custom Scrollbars
-- Code Articles and Tutorials
-- Find a place to put social media
-
+	- Custom Scrollbars
+	- Code Articles and Tutorials
+	- Find a place to put social media
 </notes>
 
 <script>
+	let randomgif = Math.floor(Math.random() * 5);
+	$('#randgif img').attr('src', './img/gif_'+randomgif+'.gif');
 
-let randomgif = Math.floor(Math.random() * 5);
-$('#randgif img').attr('src', './img/gif_'+randomgif+'.gif');
-
+	pageOnLoad();
 </script>
 
 </body>
