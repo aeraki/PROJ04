@@ -34,23 +34,24 @@
 		<div id='new'>
 			<h1>Whats New</h1>
 			<div class='list'>
-				<div><b>[Code]</b> PICO8 Console Simulation <!--<i>10/14/20</i>--></div>
-				<div><b>[Code]</b> Persona Themed Clocks <!--<i>10/14/20</i>--></div>
-				<div><b>[Site]</b> New Website v4.0 <!--<i>10/14/20</i>--></div>
+				<a><b>[Code]</b> PICO8 Console Simulation <!--<i>10/14/20</i>--></a>
+				<a><b>[Code]</b> Persona Themed Clocks <!--<i>10/14/20</i>--></a>
+				<a><b>[Site]</b> New Website v4.0 <!--<i>10/14/20</i>--></a>
 			</div>
 		</div>
 		<div id='games'>
 			<h1>Games</h1>
 			<div class='gallery'>
-				<div style='background-image: url("./img/card_nitroid.png");'>Nitroid</div>
-				<div style='background-image: url("./img/card_redspectre.png");'>Red Spectre</div>
+				<a href='#Nitroid' style='background-image: url("./img/card_nitroid.png");'>Nitroid</a>
+				<a href='#RedSpectre' style='background-image: url("./img/card_redspectre.png");'>Red Spectre</a>
 			</div>
 		</div>
 		<div id='randgif'>
-			<img/>
+			<img onclick='randomGIF()'/>
 		</div>
 	</div>
 </div>
+
 
 <div class='page article' id='About_0'>
 	<h1>My name is Ben Aeraki</h1>
@@ -62,15 +63,53 @@
 	</p>
 </div>
 
+
+<div class='page article' id='Games_0'>
+	<h1>Games</h1>
+	<div class='list'>
+		<a href='#Nitroid'><img src='./img/logo_nitroid.png' style='background-color: black;'/></a>
+		<a href='#RedSpectre'><img src='./img/logo_redspectre.png' style='background-color: #140c1c;'/></a>
+	</div>
+</div>
+
+
+<div class='page article' id='Code_0'>
+	<h1>Code</h1>
+</div>
+
+
+<div class='page article' id='History_0'>
+	<h1>History</h1>
+</div>
+
+
 <div class='page article' id='404_0'>
 	<h1>404! The page you are looking for can't be found.</h1>
 </div>
 
+
+<div class='page game' id='Nitroid_0'>
+	<h1><img src='./img/logo_nitroid.png' style='background-color: black;'/></h1>
+</div>
+
+
+<div class='page game' id='RedSpectre_0'>
+	<h1><img src='./img/logo_redspectre.png' style='background-color: #140c1c;'/></h1>
+	<div class='body'>
+		<iframe src='./games/redspectre.html'></iframe>
+		<p>The wizard Aro is on a quest to free the dungeon of Naru Du from the grasps of an
+			evil ghoul known as the Red Spectre. Explore the vast dungeon as you get closer and
+			closer to defeating the haunting ghost.</p>
+	</div>
+</div>
+
+
 <div class='page article' id='Article_0'></div>
+
 
 <footer>
 	<h2>© 2020 Aeraki</h2>
-	<a id='ver' href='#History'>Website SLATE v4.0.0</a>
+	<a id='ver' href='#History'>Website SLATE v4.0.0 β</a>
 </footer>
 
 <notes style='display:none;'>
@@ -80,9 +119,6 @@
 </notes>
 
 <script>
-	let randomgif = Math.floor(Math.random() * 13);
-	$('#randgif img').attr('src', './img/gif_'+randomgif+'.gif');
-
 	pageOnLoad();
 	console.log('Why hello there ( ͡° ͜ʖ ͡°)')
 </script>

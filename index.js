@@ -1,6 +1,7 @@
 /* Page Management - Ben Aeraki */
 
 function pageOnLoad() {
+	randomGIF();
 	let tag = location.hash;
 	if (tag === '') {
 		tag = '#Home';
@@ -19,6 +20,12 @@ function openPage(id) {
 
 	$('header .list a').removeClass();
 	$('header .list '+id+'_t').addClass('on');
+	window.scrollTo(0, 0);
+};
+
+function randomGIF() {
+	let randomgif = Math.floor(Math.random() * 13);
+	$('#randgif img').attr('src', './img/gif_'+randomgif+'.gif');
 };
 
 window.onhashchange = function () {

@@ -79,8 +79,6 @@ header .list a.on, header .list a.on:hover {
 	background-color: #0387c4;
 	color: white;
 	border-color: #0387c4;
-}
-header .list a.on:active { 
 	box-shadow: inset 5px 5px 23px #035a83, inset -5px -5px 23px #06aaf7;
 }
 
@@ -123,6 +121,10 @@ footer #ver:hover {
 	border-bottom-width: 0;
 	min-height: 58vh;
 }
+.page.article {
+	padding: 40px;
+	user-select: text;
+}
 .page h1 {
 	color: #0387c4;
 	font-size: 50px;
@@ -164,7 +166,7 @@ footer #ver:hover {
 	border-radius: 25px;
 	overflow: hidden;
 	background-image: url('./background.png');
-	background-size: 230%;
+	background-size: 230% 230%;
 }
 #Home_0 #feature h1, #feature h2 {display: inline-block; margin: 0;}
 #Home_0 #feature h2 {
@@ -185,7 +187,7 @@ footer #ver:hover {
 	overflow-y: hidden;
 	scrollbar-width: thin;
 }
-#Home_0 #new .list > div {
+#Home_0 #new .list > a {
 	color: lightgray;
 	margin-bottom: 5px;
 	font-size: 20px;
@@ -194,14 +196,15 @@ footer #ver:hover {
 	border-radius: 10px 10px 0 0;
 	border-bottom: 2px solid #1d1d1d;
 	transition: 0.2s;
+	display: block;
 }
-#Home_0 #new .list > div:hover {
+#Home_0 #new .list > a:hover {
 	border-bottom-color: #555555;
 }
-#Home_0 #new .list > div b {
+#Home_0 #new .list > a b {
 	color: #555555;
 }
-#Home_0 #new .list > div i {
+#Home_0 #new .list > a i {
 	color: #464646;
 	font-size: 12px;
 	float: right;
@@ -221,7 +224,7 @@ footer #ver:hover {
 	justify-content: center;
 	flex-wrap: wrap;
 }
-#Home_0 #games .gallery > div {
+#Home_0 #games .gallery > a {
 	width: 300px;
 	height: 200px;
 	background-color: #222;
@@ -239,7 +242,7 @@ footer #ver:hover {
 	transition: 0.2s;
 	cursor: pointer;
 }
-#Home_0 #games .gallery div:hover {
+#Home_0 #games .gallery a:hover {
 	border-color: #555555;
 	background-size: 110%;
 }
@@ -260,7 +263,50 @@ footer #ver:hover {
 	border-color: #555555;
 }
 
-.page.article {
-	padding: 40px;
-	user-select: text;
+#Games_0 .list > a {
+	margin-top: 40px;
+	display: block;
+	background-color: #26292d;
+	border-radius: 25px;
+	border: solid 1px #1d1d1d;
+	box-shadow: 7px 7px 25px #1d2024, -7px -7px 25px #2f3236;
+	padding: 20px;
+	height: 100px;
+}
+.page.game > h1 {
+	display: block;
+	background-color: #26292d;
+	border-radius: 25px;
+	border: solid 1px #1d1d1d;
+	box-shadow: 7px 7px 25px #1d2024, -7px -7px 25px #2f3236;
+	padding: 20px;
+	height: 100px;
+}
+#Games_0 .list > a img, .page.game > h1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 20px;
+}
+
+.page.game .body {
+	padding: 20px;
+	margin-top: 20px;
+	display: block;
+	background-color: #26292d;
+	border-radius: 25px;
+	border: solid 1px #1d1d1d;
+	box-shadow: 7px 7px 25px #1d2024, -7px -7px 25px #2f3236;
+}
+.page.game .body iframe {
+	border-radius: 20px;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 500px;
+	border: none;
+	margin-bottom: 20px;
+}
+.page.game .body p {
+	width: 60%;
 }
